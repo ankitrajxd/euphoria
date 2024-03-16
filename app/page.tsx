@@ -19,6 +19,9 @@ export default function Home() {
           <Link href={"/nav/events"}>
             <li className="text-[#FFE8B2] text-md">Events</li>
           </Link>
+          <Link href={"/nav/onlineevents"}>
+            <li className="text-[#FFE8B2] text-md">Online Events</li>
+          </Link>
           <Link href={"/nav/accomodation"}>
             <li className="text-[#FFE8B2] text-md">Accommodation</li>
           </Link>
