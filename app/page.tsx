@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./hero.module.css";
 import heading from "@/public/heading.png";
 import logo from "@/public/logo.png";
-import Link from "next/link"  ;
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,14 +12,21 @@ export default function Home() {
           <Image src={heading} alt="heading" />
         </div>
         <ul className="flex justify-between my-9 flex-col md:flex-row gap-y-2 md:gap-0">
-          <Link href={'/registration'}>
+          <Link href={"/nav/registration"}>
             <li className="text-[#FFE8B2] text-md">Registration</li>
           </Link>
-          <li className="text-[#FFE8B2] text-md">Online Events</li>
-          <li className="text-[#FFE8B2] text-md">Events</li>
-          <li className="text-[#FFE8B2] text-md">Accommodation</li>
-          <li className="text-[#FFE8B2] text-md">Gallery</li>
-          <li className="text-[#FFE8B2] text-md">Contact</li>
+          <Link href={"/nav/events"}>
+            <li className="text-[#FFE8B2] text-md">Events</li>
+          </Link>
+          <Link href={"/nav/accomodation"}>
+            <li className="text-[#FFE8B2] text-md">Accommodation</li>
+          </Link>
+          <Link href={"/nav/gallery"}>
+            <li className="text-[#FFE8B2] text-md">Gallery</li>
+          </Link>
+          <Link href={"/nav/contact"}>
+            <li className="text-[#FFE8B2] text-md">Contact</li>
+          </Link>
         </ul>
       </div>
       <div className="bg-[#26252D] p-6">
