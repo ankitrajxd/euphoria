@@ -3,6 +3,7 @@ import styles from "./hero.module.css";
 import heading from "@/public/heading.png";
 import logo from "@/public/logo.png";
 import Link from "next/link";
+import locationimg from "@/public/location.png";
 
 export default function Home() {
   return (
@@ -64,10 +65,31 @@ export default function Home() {
         <div className="bg-[#ffe8b2] rounded-md w-full h-[400px] my-6"></div>
       </div>
 
-      <div className="bg-[#26252D] p-4 md:p-7">
+      <div className="bg-[#26252D] p-4 md:p-8">
         <h2 className="text-4xl">Contact</h2>
-        <div className="bg-[#19181b] p-3 my-6 rounded-xl">
-          <Image src={logo} alt="logo" className="size-24 md:size-56" />
+        <div className="bg-[#19181b] p-3 my-6 rounded-xl flex justify-between">
+          <div className="flex gap-4 overflow-hidden">
+            <Image src={logo} alt="logo" className="size-24 md:size-56" />
+            <Image
+              src={locationimg}
+              alt="logo"
+              className="size-24 md:size-56 rounded-md"
+            />
+          </div>
+          <div className="flex flex-col gap-y-28 my-2">
+            <div className="flex gap-4 justify-around">
+              <p className="font-bold text-[#FFE8B2]">Address</p>
+              <p className="w-[40%] text-[#FFE8B2]">
+                {" "}
+                GMCH Sarai Building 1208, Dakshin Marg, 32A Sector 32 Chandigarh
+                160047
+              </p>
+            </div>
+            <div className="flex gap-4 justify-around">
+              <p className="font-bold text-[#FFE8B2]">Instagram</p>
+              <p className="w-[40%] text-[#FFE8B2]"> euphoriachandigarh</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
